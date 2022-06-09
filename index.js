@@ -5,7 +5,7 @@ const { getDatabase, ref, set } = require('firebase/database');
 
 ////////////////////// НАСТРОЙКА /////////////////////////
 
-const serverIP = 'https://api.mcsrvstat.us/2/prp.plo.su';
+const serverIP = 'https://api.mcsrvstat.us/2/prp.plo.su'; // IP СЕРВЕРА ДЛЯ СБОРА ДАННЫХ
 const statsDays = 10000; // ПЕРВАЯ ЦИФРА ЭТО КОЛ-ВО ДНЕЙ
 const statsMinutes = 10; // КАЖДЫЕ 10 МИН СБОР ДАННЫХ
 
