@@ -10,14 +10,14 @@ const statsDays = 10000; // ПЕРВАЯ ЦИФРА ЭТО КОЛ-ВО ДНЕЙ
 const statsMinutes = 10; // КАЖДЫЕ 10 МИН СБОР ДАННЫХ
 
 const firebaseConfig = {
-   apiKey: 'AIzaSyBSQS4Dyaq3GRcdc14wu7104xWdI7aLYCY',
-   authDomain: 'mixlands-3696a.firebaseapp.com',
-   databaseURL: 'https://mixlands-3696a-default-rtdb.firebaseio.com',
-   projectId: 'mixlands-3696a',
-   storageBucket: 'mixlands-3696a.appspot.com',
-   messagingSenderId: '750489906074',
-   appId: '1:750489906074:web:b5af2b0694dbfcf7666823',
-   measurementId: 'G-2250PVDBS2',
+   apiKey: 'AIzaSyAvnlJ_k-MkPx0rflE_KZevQ9ddhXubGIk',
+   authDomain: 'mixlands-8fd5a.firebaseapp.com',
+   databaseURL: 'https://mixlands-8fd5a-default-rtdb.firebaseio.com',
+   projectId: 'mixlands-8fd5a',
+   storageBucket: 'mixlands-8fd5a.appspot.com',
+   messagingSenderId: '273559638708',
+   appId: '1:273559638708:web:e931b9b77f3b98bd40fde1',
+   measurementId: 'G-EQKD2FB2BQ',
 };
 
 /////////////////////////////////////////////////////////
