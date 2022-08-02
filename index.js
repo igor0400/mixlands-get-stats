@@ -5,7 +5,7 @@ const { getDatabase, ref, set } = require('firebase/database');
 
 ////////////////////// НАСТРОЙКА /////////////////////////
 
-const serverIP = 'https://api.mcsrvstat.us/2/play.mixlands.space'; // IP СЕРВЕРА ДЛЯ СБОРА ДАННЫХ
+const serverIP = 'play.mixlands.space'; // IP СЕРВЕРА ДЛЯ СБОРА ДАННЫХ
 const statsDays = 10000; // ПЕРВАЯ ЦИФРА ЭТО КОЛ-ВО ДНЕЙ
 const statsMinutes = 10; // КАЖДЫЕ 10 МИН СБОР ДАННЫХ
 
@@ -56,8 +56,8 @@ const postStats = async () => {
    let onlinePlayers = 0;
 
    await axios
-      .get(serverIP)
-      .then((res) => (onlinePlayers = res.data.players.online));
+      .get(`https://api.mcsrvstat.us/2/${serverIP}`)
+      .then((res) => (res.data.players && res.data.players.online ? onlinePlayers = res.data.players.online : null));
 
    const data = {
       onlinePlayers: onlinePlayers,
