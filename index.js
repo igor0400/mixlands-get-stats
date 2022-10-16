@@ -33,7 +33,8 @@ const postServerStats = async ({ name, port }) => {
          if (res.data?.players?.online) {
             onlinePlayers = res.data.players.online;
          }
-      });
+      })
+      .catch((e) => console.log(e));
 
    const data = {
       onlinePlayers,
